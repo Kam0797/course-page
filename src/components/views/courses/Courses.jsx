@@ -1,0 +1,50 @@
+import { useContext, useState } from 'react'
+import ContentArea from '../../reusable/content-area/ContentArea'
+import './Courses.css'
+import { Context } from '../../../Context'
+import CourseWidget from '../../reusable/course-widget/CourseWidget'
+
+export default function Courses() {
+
+  const {activeSidebarItem, courseDetails} = useContext(Context)
+  const [activeNavbarItem, setActiveNavbarItem] = useState("Design")
+  const navbarItems = [
+    {
+      id: "Advertising"
+    },
+    {
+      id: "Design"
+    },
+    {
+      id: "Marketing"
+    },
+    {
+      id: "Illustration"
+    },
+    {
+      id: "Brand"
+    }
+  ]
+
+  return (
+    <>{ activeSidebarItem == "Courses" && (
+      <ContentArea title={activeSidebarItem}>
+        <div className='navbar-wrapper'>
+          {
+            navbarItems.map((item, index)=> {
+              return <button type='button' className={`navbar-item ${item.id == activeNavbarItem ? "navbar-item-active" : ""}`} key={index} onClick={()=> setActiveNavbarItem(item.id)}>{item.id}</button>
+            })
+          }
+        </div>
+        <div className='courses-wrapper'>
+          {
+            courseDetails?.map((courseDetail, index)=> {
+              return <CourseWidget courseDetail={courseDetail} key={index} />
+            })
+          }
+        </div>
+      </ContentArea>
+      )}
+    </>
+  )
+}

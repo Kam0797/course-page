@@ -1,0 +1,76 @@
+
+.sidebar-wrapper {
+  grid-area: sidebar;
+  border: 1px solid;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+  background-color: #f8f8f8;  
+}
+
+
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 4px;
+  height: 70%;
+  gap: 1rem;
+}
+
+.sidebar-items .sidebar-item {
+  font-size: 1rem;
+}
+
+.sidebar-item, .sidebar-title, .logout-button {
+  display: flex;
+  padding: 10px 7px 7px 1.5rem;
+  gap: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: border 0.1s ease;
+  color: #585858
+}
+.sidebar-title {
+  display: flex;
+  padding: 1.5rem;
+  font-weight: 900;
+  align-items: center;
+  color: #000;
+  width: 100%;
+}
+
+ .sidebar-title-text {
+  font-size: 1.2rem;
+}
+
+.sidebar-item-active {
+  color: #000;
+  border-left: 4px solid #000;
+}
+
+.logout-area {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #585858;
+}
+.logout-button {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.logout-button:hover {
+  color: #fff;
+  background-color: #f00;
+  /* padding: 10px 1.5rem 7px 1.5rem; */
+  border-radius: 10px;
+  width: 100%;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
