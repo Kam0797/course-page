@@ -1,0 +1,16 @@
+
+.wrapper {
+  width: 100%;
+  height: 10px;
+  background-color: grey;
+  display: flex;
+}
+.progress-indicator {
+  background-color: #000;
+  height: 100%;
+}
+.fancy {
+  background-color: #f46;
+  width: 3%;
+  height: 100%;
+}

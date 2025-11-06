@@ -1,6 +1,6 @@
 
 .wrapper {
-  /* border: 1px solid brown; */
+  border: 1px solid brown;
   display: flex;
   flex-direction: column;
 
@@ -10,11 +10,17 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 .title {
   color: #000;
   font-weight: 800;
   font-size: 1.2rem;
 
+}
+.float {
+  width: 90%;
+  margin-top: 1.5rem;
+  padding: 0.4rem;
+  box-shadow: 9px 10px #c7c7c7, -3px -3px 5px #a8a8a8;
 }

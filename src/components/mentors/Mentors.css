@@ -1,4 +1,53 @@
 
 .mentors-wrapper {
   grid-area: mentors;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  /* max-height: 30dvh; */
+  overflow: hidden;
+}
+
+.mentors-area {
+  height: calc(33dvh);
+  overflow: scroll;
+  /* background-color: aquamarine; */
+}
+.mentor {
+  height: 5.7rem;
+  display: flex;
+  width: 100%;
+  /* border: 1px solid ; */
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem
+}
+.mentor-pic{
+  height: 80%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid rgb(212, 212, 212);
+}
+
+.mentor-details {
+  flex: 2;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+
+}
+.mentor-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+.mentor-desg {
+  color: grey;
+  font-weight: 500;
+}
+.mentor-exp {
+  color: #707070;
+  font-weight: 600;
 }

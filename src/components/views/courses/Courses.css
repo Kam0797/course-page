@@ -1,5 +1,14 @@
 
-
+.view-grid-provider {
+  /* background-color: #585858; */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 88dvh;
+}
 .navbar-wrapper {
   /* border: 1px solid; */
   display: flex;
@@ -7,6 +16,7 @@
   justify-content: flex-start;
   width: 100%;
   height: 4rem;
+  min-height: 50px;
   border-bottom: 1px solid grey;
   gap: 2.3rem;
 }
@@ -24,4 +34,8 @@
 .navbar-item-active {
   color: #000;
   border-bottom: 3px solid #000;  
+}
+.courses-wrapper {
+  /* border: 1px solid grey; */
+  overflow-x: hidden;
 }

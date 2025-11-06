@@ -8,6 +8,8 @@ export default function Courses() {
 
   const {activeSidebarItem, courseDetails} = useContext(Context)
   const [activeNavbarItem, setActiveNavbarItem] = useState("Design")
+
+  // from API
   const navbarItems = [
     {
       id: "Advertising"
@@ -29,6 +31,7 @@ export default function Courses() {
   return (
     <>{ activeSidebarItem == "Courses" && (
       <ContentArea title={activeSidebarItem}>
+        <div className='courses-view-grid-provider'>
         <div className='navbar-wrapper'>
           {
             navbarItems.map((item, index)=> {
@@ -42,6 +45,7 @@ export default function Courses() {
               return <CourseWidget courseDetail={courseDetail} key={index} />
             })
           }
+        </div>
         </div>
       </ContentArea>
       )}

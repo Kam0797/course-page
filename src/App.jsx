@@ -6,6 +6,7 @@ import TopBar from './components/top-bar/TopBar'
 import { ContextProvider } from './Context'
 
 import "@fontsource/nunito/latin.css"
+import LearningProgress from './components/learning-progress/LearningProgress'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <TopBar />
       <Courses />
       <Mentors />
+      <LearningProgress />
     </ContextProvider>
     </>
   )
