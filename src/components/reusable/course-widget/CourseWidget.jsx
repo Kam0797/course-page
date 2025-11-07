@@ -5,7 +5,7 @@ import Section from '../section/Section'
 import styles from './CourseWidget.module.css'
 
 export default function CourseWidget({courseDetail}) {
-  const courseDuration = "not impled"
+  const courseDuration = `${courseDetail.startDate} - ${courseDetail.endDate}`
   const CardIcon = courseDetail.icon
 
   return(
@@ -23,16 +23,14 @@ export default function CourseWidget({courseDetail}) {
           </div>
         </div>
         <div className={styles.detailsWrapper}>
-          {/* <div className={styles.detailsTop}> */}
           <Section title={courseDetail.name} titleRight={<span className={styles.ratingArea}> <LucideStar size={20} /> {courseDetail.rating}</span>}>
             <span className={styles.description}>{courseDetail.description}</span>
           </Section>
-          {/* </div> */}
           <div className={styles.detailsBottom}>
             <div className={styles.tagsWrapper}>
               {
-                courseDetail?.tags.map(tag => {
-                  return <div className={styles.tag}>{tag}</div>
+                courseDetail?.tags.map((tag, index) => {
+                  return <div className={styles.tag} key={index}>{tag}</div>
                 })
               }
             </div>

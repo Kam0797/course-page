@@ -3,26 +3,23 @@
   grid-area: mentors;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
-  /* max-height: 30dvh; */
   overflow: hidden;
 }
 
 .mentors-area {
   height: calc(33dvh);
   overflow: scroll;
-  /* background-color: aquamarine; */
 }
 .mentor {
   height: 5.7rem;
   display: flex;
   width: 100%;
-  /* border: 1px solid ; */
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem
+  gap: 1.5rem;
+  border-bottom: 1px solid #e7e7e7;
 }
 .mentor-pic{
   height: 80%;
@@ -34,7 +31,6 @@
 
 .mentor-details {
   flex: 2;
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
 

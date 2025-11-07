@@ -6,4 +6,7 @@
   box-sizing: border-box;
   outline: 0;
   background: none;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
+/*  scrollbars set to none */

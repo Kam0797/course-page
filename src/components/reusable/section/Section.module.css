@@ -1,8 +1,8 @@
 
 .wrapper {
-  border: 1px solid brown;
   display: flex;
   flex-direction: column;
+  height: 100%;
 
 }
 .title-area {
@@ -19,8 +19,7 @@
 
 }
 .float {
-  width: 90%;
-  margin-top: 1.5rem;
+  width: 97%;
   padding: 0.4rem;
   box-shadow: 9px 10px #c7c7c7, -3px -3px 5px #a8a8a8;
 }

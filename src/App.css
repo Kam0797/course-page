@@ -4,11 +4,11 @@
   grid-template-columns: 1.8fr 4.5fr 2.5fr;
   grid-template-rows: 0.8fr 1fr 1fr 3.6fr 3.4fr;
   grid-template-areas : 
-  "sidebar content top-bar"
-  "sidebar content calender"
-  "sidebar content calender"
-  "sidebar content mentors"
-  "sidebar content progress";
+  "sidebar content content"
+  "sidebar content content"
+  "sidebar content content"
+  "sidebar content content"
+  "sidebar content content";
 
   height: 100dvh;
   width: 100dvw;

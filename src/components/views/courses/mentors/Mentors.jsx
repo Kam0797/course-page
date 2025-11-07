@@ -1,9 +1,9 @@
 
 
 import { useContext } from 'react'
-import Section from '../reusable/section/Section'
+import Section from '../../../reusable/section/Section'
 import './Mentors.css'
-import { Context } from '../../Context'
+import { Context } from '../../../../Context'
 
 export default function Mentors() {
 

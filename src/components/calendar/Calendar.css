@@ -1,1 +1,46 @@
+.calendar-area-wrapper {
+  grid-area: calendar;
 
+}
+
+.calendar-wrapper {
+  width: 100%;
+  /* height: 4rem; */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cal-buttons {
+  display: flex;
+  gap: 0.2rem
+}
+.cal-button-left, .cal-button-right {
+  color: grey;
+  cursor: pointer;
+}
+.date-wrapper {
+  cursor: pointer;
+  border: 1px solid #e7e7e7;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.date-wrapper {
+  width: 11%;
+  color: grey;
+  font-weight: 700;
+}
+.day {
+  font-size: 0.7rem;
+}
+.date-wrapper-today {
+  background-color: #000;
+  color: #fff;
+}
+.date-today {
+  border-bottom: 2px solid #fff;
+}

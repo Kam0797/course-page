@@ -1,0 +1,30 @@
+
+
+.learning-progress-wrapper {
+  grid-area: progress;
+  margin-bottom: 5px;
+  /* border: 1px solid green; */
+  /* padding: 1.2rem; */
+}
+
+.progress-widget {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  gap: 0.3rem
+}
+
+.course-name-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4d4d4d
+}
+.course-progress {
+  font-weight: 800;
+}

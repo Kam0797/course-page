@@ -12,9 +12,6 @@ export default function TopBar() {
   return(
     <>
       <div className='top-bar-wrapper' >
-        {/* <div className='top-bar-heading'>
-          {`${activeSidebarItem}.`}
-        </div> */}
         <div className='top-bar-right-area'>
           <button className='notifications-button'>
             <LucideBell size={21} strokeWidth={2.5} />
@@ -22,7 +19,7 @@ export default function TopBar() {
           </button>
           <div className='profile'>
             <span className='profile-name'>{profileName}</span>
-            <img className='profile-pic' alt={profilePicAlt} src={null} />
+            <div className='profile-pic'  src={null}>{profilePicAlt}</div>
           </div>
         </div>
       </div>

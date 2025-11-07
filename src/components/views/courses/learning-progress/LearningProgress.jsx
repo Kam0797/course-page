@@ -1,10 +1,10 @@
 
 
 import { useContext } from 'react'
-import ProgressBar from '../reusable/progress-bar/ProgressBar'
-import Section from '../reusable/section/Section'
+import ProgressBar from '../../../reusable/progress-bar/ProgressBar'
+import Section from '../../../reusable/section/Section'
 import './LearningProgress.css'
-import { Context } from '../../Context'
+import { Context } from '../../../../Context'
 
 export default function LearningProgress() {
 
