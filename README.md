@@ -1,8 +1,13 @@
 # Task
 
-##Challenges:
+## Challenges:
   - I cant clearly decide if the 'Courses." belongs to `top-bar` or `content-area`.
   I think its semantically closer to `content-area`, but in `top-bar` pov, it seems to have a place there too. 
+
+## Inference / Fix:
+  - The area right to sidebar depends on sidebar-option
+  - The top panel (content-title and profile area) are separated from rest of 'content' internally.
+  - Implemented 2 nested grids
 
 ## Backend ER Diagram
 
